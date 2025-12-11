@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <div id="okay_failed">
+        <h1>Sistema de notas (aprovado/reprovado)</h1>
+        <h2>Se tiver média 5 ou acima <b>Aprovado</b>,caso contrario <b>Reprovado</b></h2>
+        <label for="notes_one">Insira aqui a 1° nota </label>
+            <input id="notes_one" type="number" min="0" max="10">
+        <label for="notes_two">Insira aqui a 2° nota </label>
+            <input id="notes_two" type="number" min="0" max="10">
+        <label for="notes_tree">Insira aqui a 3° nota </label>
+            <input id="notes_tree"  type="number" min="0" max="10">
+        <label for="notes_four">Insira aqui a 4° nota </label>
+            <input id="notes_four"  type="number" min="0" max="10">
+      <div class="calulate_okay_failed">
+        <button onclick="result_okay_failed()">Resultado</button>
+        <div id="result">
+
+        </div>
+      </div>
+    </div>
+   
+
+    
+    <div id="validator_age">
+        <h1>Validador de idade</h1>
+        <h2>Descubra se pode participar</h2>
+        <label for="age">Qual sua idade ? </label>
+        <input type="number" min="1" max="150" id="age">
+        <button onclick="validator()">Posso participar ?</button>
+        <div id="age_validator">
+
+        </div>
+    </div>
+    
+
+
+
+
+    <div id="cash_machine">
+        <h1>Simulador de caixa eletrônico</h1>
+    </div>
+    
+
+
+</body>
+<script src="condicionais.js"></script>
+</html>
