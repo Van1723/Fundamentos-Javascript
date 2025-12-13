@@ -5,7 +5,7 @@ function age_larger()
     const age_split = age.split(',');
     age_llarger = age_split.filter(function(age_split) 
     {
-    return age_split >= 18; // Retorna true se for par
+    return age_split >= 18; 
     });
     
 
