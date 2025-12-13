@@ -27,8 +27,15 @@ function result_okay_failed(){
 
 function validator(){
     let age = document.getElementById('age').value;
-    if(age.valueOf >= 18){
-        document.getElementById('age_validator').innerHTML = 'Sua idade ' 
-    }
+    let age_convert = parseInt(age);
 
+    if( age_convert.valueOf >= '18')
+    {
+        document.getElementById('age_validator').innerHTML = 'Sua idade é ' + age + '  Maior de idade';
+    }
+    else( age_convert < '18')
+    {
+        document.getElementById('age_validator').innerHTML = 'Sua idade é ' + age + '  Menor de idade';
+    }    
+   
 }
